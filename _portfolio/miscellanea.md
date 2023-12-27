@@ -23,6 +23,3 @@ Wework Building, Shanghai, July, 2020
 
 Jiaozi Park, Chengdu, January, 2020
 ![Jiaozi-Park](/images/misc/jiaozi-chengdu.jpeg)
-
-Xiling Snow Mountain, Chengdu, January, 2020
-![Xiling](/images/misc/xiling.jpeg)
