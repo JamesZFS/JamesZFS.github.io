@@ -10,7 +10,7 @@ author_profile: true
 I enjoy traveling and photography. Here are some of the photos that best represent my travel experiences and daily moments.
 
 
-{% for post in site.portfolio %}
+{% for post in site.portfolio reversed %}
   {% include archive-single.html %}
 {% endfor %}
 
