@@ -6,10 +6,10 @@ excerpt: 'In this paper, we present ProxiTalk, an interaction technique that all
 date: 2019-09-01
 venue: 'IMWUT'
 paperurl: 'http://pi.cs.tsinghua.edu.cn/lab/papers/ProxiTalk.pdf'
-citation: 'Yang Z, Yu C, Zheng F, et al. ProxiTalk: Activate Speech Input by Bringing Smartphone to the Mouth[J]. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2019, 3(3): 1-25. '
+citation: 'Yang, Zhican, Chun Yu, Fengshi Zheng, and Yuanchun Shi. "Proxitalk: Activate speech input by bringing smartphone to the mouth." Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 3, no. 3 (2019): 1-25.'
 ---
 In this paper, we present ProxiTalk, an interaction technique that allows users to enable smartphone speech input by simply moving it close to their mouths.
 
 [Download paper here](http://pi.cs.tsinghua.edu.cn/lab/papers/ProxiTalk.pdf)
 
-Recommended citation: Yang Z, Yu C, Zheng F, et al. ProxiTalk: Activate Speech Input by Bringing Smartphone to the Mouth\[J\]. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2019, 3(3): 1-25. 
+Recommended citation: Yang, Zhican, Chun Yu, Fengshi Zheng, and Yuanchun Shi. "Proxitalk: Activate speech input by bringing smartphone to the mouth." Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 3, no. 3 (2019): 1-25. 
