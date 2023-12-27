@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Fengshi Zheng"
   avatar           : "profile.jpg"
-  bio              : "I'm a senior undergraduate student from the department of Computer Science and Technology, Tsinghua University."
-  location         : "Beijing, China"
+  bio              : "I'm a CS master student at ETH Zurich, majoring in computer graphics."
+  location         : "Zurich, Switzerland"
   employer         :
   pubmed           : 
   googlescholar    : false
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "fengshi-zheng-2b0a1719a"
   orcid            : 
   pinterest        :
   soundcloud       :
