@@ -10,133 +10,152 @@ redirect_from:
 {% include base_path %}
 Here's a pdf version of my [CV](/files/cv.pdf)
 
-Education
-======
-Undergraduate at Tsinghua University(THU), Beijing, China
-* Majored in Physics Department, 2016 - 2018
-* Changed major into Computer Science and Technology Department, 2018 - 2021
-* Expected to graduate in July, 2021
-* Major GPA:   **3.91**  Rank: **2**/204
-* Overall GPA: **3.89**  Rank: **4**/204
+# Education
 
-Scholarship & Awards
-======
-* China National Scholarship (Top 1%), 10/2020
-* Comprehensive Excellence Scholarship (Top 7%) at Computer Science and Technology Department, THU, 10/2019
-* Comprehensive Excellence Scholarship (Top 10%) at Physics Department, THU, 10/2017
-* National Silver Prize, National Olympiad in Physics, 2015
-* Provincial Second Prize, National Olympiad in Informatics, 2014
+### Master of Computer Science at ETH Zurich, Switzerland
+- Sep. 2021 - Jul. 2024 (expected)
+- Major in visual computing
+- **GPA: 5.8/6.0**
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Internship Experience
-======
-### Graphics Programmer at Bytedance, Summer 2020
-* Product RD and Infrastructure, Bytedance Game Department
-* Implemented a mobile-phone next-generation water/pool graphics effect solution based on the Unity Engine independently
-* Features: 
-  - **Ray tracing** based water rendering
-  - **GPU-level parallel** water wave simulation and real time caustics computation
-  - Screen space underwater effects and water-ball interaction
-  - Consistent with Unity's built-in shadowmap and lightmap
-* Did a technical presentation among my leader and colleagues and received **supreme judgment**
+### Bachelor of Computer Science in  at Tsinghua University, Beijing, China
+- Majored in Physics, Sep. 2016 - Jul. 2018
+- Changed major into Computer Science and Technology, Sep. 2018 - Jul. 2021
+- **GPA: 3.89,  Rank: 4/204**
 
-Research Experience
-======
+-----
 
-### Graphics and Geometric Computing Group, THU
-* Advised by [Prof. Kun Xu](https://cg.cs.tsinghua.edu.cn/people/~kun/), 10/2019 - Present
-* Commercial project for Alibaba: enhancement to a renderer based on NVIDIA’s Optix library
-  - Added useful features like accepting/casting shadows, primary visibility to the renderer
-  - Parsed camera and scene geometric information from FBX files
-  - Implemented a shadowmap computing algorithm
-* Academic research: a consistent denoising algorithm for Monte Carlo rendering (on-going)
-  - Derived the problem's mathematical formula
-  - Did in-depth research and found a variant of conjugate gradient algorithm to solve the problem efficiently and effectively
+# Scholarship & Awards
 
-### Pervasive Human-Computer Interaction Group, THU
-* Advised by [Prof. Chun Yu](http://pi.cs.tsinghua.edu.cn/lab/people/ChunYu/), 01/2019 - 05/2019
-* Published *ProxiTalk: Activate Speech Input by Bringing Smartphone to the Mouth* to IMWUT 2019
-* Main duties:
-  - Second student author
-  - Handled part of the image/voice data processing and analyzing work
-  - Tackled the gesture recognition problem with neural and tradition machine learning methods
-  - Conducted a 20-user data collecting experiment and a 60-user evaluation experiment
+- **China National Scholarship** (Top 1%), Oct. 2020
+- Comprehensive Excellence Scholarship (Top 10%) at Computer Science and Technology Department, Tsinghua, Oct. 2019
+- Comprehensive Excellence Scholarship (Top 10%) at Physics Department, Tsinghua, Oct. 2017
+- Third prize in The Challenge Cup (science and innovation competition) of Tsinghua, Oct. 2020
+- National Silver Prize, Chinese National Olympiad in Physics, 2015
+- Provincial Second Prize, Chinese National Olympiad in Informatics, 2014
 
-Selected Course Performance
-======
+-----
 
-### Fundamentals of Computer Graphics (A)
-* Implemented a C++ physically-based CPU renderer
-* [Project repo](https://github.com/JamesZFS/Pharosa)
-* Highlighted features:
-  - Incorporates a vector/matrix math library without external library support
-  - Supports the path tracing and the **stochastic progressive photon mapping** global illumination algorithm
-  - Supports the KD tree scene acceleration structure and complex triangle mesh scene files
-  - A flexible and extensible system strictly following object oriented principles
+# Research Experience
 
-### Human-Computer Interaction Theory and Technology (A-)
-* Proposed and researched on a mobile phone camera interaction app - *IntelliZoomer*
-* [Project repo](https://github.com/JamesZFS/IntelliZoomer)
-* Leader of a three-student group
-* Core features:
-  - Exploits the distance information from front camera to adjust the back camera's zoom ratio
-  - Detects the smiling gesture of the user to trigger "capture"
-  - Integrates iPhone 11's state-of-the-art multi-camera session and vision techniques
-* Conducted a 14-user evaluation experiment and proved our proposed app's advantages over current camera apps
-* Enrolled in the most prestige science & innovation competition in THU - "**The Challenge Cup**" - and won the third prize
+### [Computer Graphics Laboratory](https://cgl.ethz.ch/), ETH, Zurich, Switzerland
+- Master thesis, Dec. 2023 - Jul. 2024 (expected)
+- Research on spatial subdivision for path guiding.
 
-### Service Oriented Software Design and Development (A+)
-* Designed and implemented an intelligent COVID-19 data visualizing & analyzing system - *AntiNCP*
-* [Our website](http://129.204.207.38/#)
-* In charge of backend construction, algorithm integration, operation & maintenance and UI framework design
-* Highlighted features:
-  - Collects pandemic data and news articles automatically and periodically
-  - Extract trend words and topics from articles using Tf·Idf model and clustering algorithms
-* Achieved the **highest completion** among all groups in the course
-* Served **more than 6,000 users** till now
+### Rendering Group, [Disney Research Studios](https://studios.disneyresearch.com/about-us/), Zurich, Switzerland
+- Semester thesis, Apr. 2023 - Jul. 2023
+- Research on improving the path sampling for realistic image synthesis using machine learning methods.
+- Got overall grade 6.0/6.0
 
-### Software Engineering (A)
-* Implemented an online live teaching platform for Jisuanke Company
-* Made core contribution in the group and impressed the clients
-* [Project repo](https://github.com/JamesZFS/AwesomeCoding)
-* Became one of the **teaching assistants** of this course in the second year
-  - Helped my peer students learn the essence of software developing principles (git cooperation, code style, etc.)
-  - Guided 5 groups on developing a cloud resource computing and task execution platform
+### [Realistic Graphics Lab](https://rgl.epfl.ch/), EPFL, Lausanne, Switzerland
+- Summer research intern, Jun. 2022 - Sep. 2022
+- Polish and extend kernel caching features in [Dr.Jit](https://rgl.epfl.ch/publications/Jakob2022DrJit), a just-in-time compiler for inverse rendering.
 
-### Computer Organization (A-)
-* Designed a MIPS32 CPU in Verilog with 2 other students
-* [Project repo](https://github.com/JamesZFS/MIPS-CPUer)
-* Highlighted features:
-  - Supports around 30 kinds of basic and interruptive MIPS32 instructions
-  - Supports several peripherals including DVI video output and flash storage
-  - Contains a fixed-point numerical system and a **three-body problem** simulator/visualizer in MIPS assembly
+### [Graphics and Geometric Computing Group](https://cg.cs.tsinghua.edu.cn/), Tsinghua University, Beijing, China
+- Undergraduate research fellow & bachelor thesis, Oct. 2019 - Jun. 2021
+- Second author of [Ensemble Denoising for Monte Carlo Renderings](https://cg.cs.tsinghua.edu.cn/people/~kun/2021denoising/Ensemble_Denoising_SIGA2021_small.pdf).
+- Published at SIGGRAPH Asia 2021.
 
-### Principles and Practice of Compiler Construction (A)
-* Enhanced a decaf language compiler implemented in Rust
-* [Project repo](https://github.com/JamesZFS/Decaf)
-* Added **functional programming** features to the basic decaf grammar (such as lambda expressions and first-class functions)
-* Added some compiling optimization actions along with an implementation of a renowned iterative global register allocation algorithm
+### [Pervasive Human-Computer Interaction Group](https://pi.cs.tsinghua.edu.cn/), Tsinghua University, Beijing, China
+- Undergraduate research fellow, Jan. 2019 - May 2019
+- Third author of a [ProxiTalk](https://dl.acm.org/doi/abs/10.1145/3351276), a novel mobile phone interaction technique.
+- Published at IMWUT 2019.
+
+-----
+
+# Work Experience
+
+### ByteDance Inc, Shanghai, China
+- Graphics programming intern at game department, Jun. 2020 - Sep. 2020
+- Develop real-time real-tracing water pool graphics effects in Unity Engine.
+- Parallelize wave simulation and caustics computation on GPU.
+
+### SIGA Services AG, Ruswil, Switzerland
+- Software engineer intern, Mar. 2022 - Jun. 2022
+- Develop OpenGL solutions to render point clouds with Xamarin.
+
+-----
+
+# Selected Course Projects
+
+## Master Courses, ETH Zurich
+
+### Computer Graphics (6.0/6.0)
+- Implement a physics-based renderer based on [Nori](https://cgl.ethz.ch/teaching/cg22/www-nori/index.html), an tutorial rendering framework.
+- Advanced features:
+  - Render participating media (clouds, smoke, etc) with multiple importance sampling.
+  - Implement Disney BSDF, an appearance model widely used in production.
+  - Procedural generation of a night city scene.
+
+### [Scientific Visualization](https://github.com/JamesZFS/zwickypixies)
+- Develop a real-time visualization application for cosmology simulation based on VTK library.
+- Support interactive rendering of various particle properties (temperature, potential, velocity, etc).
+
+### [Physics-based Simulation](https://github.com/Fiona730/Position-Based-Fluids-Taichi) (5.75/6.0)
+- Implement [position based fluid](https://mmacklin.com/pbf_sig_preprint.pdf) simulation based on [Taichi](https://www.taichi-lang.org/).
+- Handle fluid-solid interaction through collision detection.
+
+### [Advanced Systems Lab](https://github.com/Fiona730/SPPM-CPU-Optimization?tab=readme-ov-file) (5.75/6.0)
+- Implement and optimize [stochastic progressive photon mapping](https://cs.uwaterloo.ca/~thachisu/sppm.pdf), an offline rendering algorithm.
+- Achieve a fully vectorized (SIMD) implementation with 22.7x speedup compared to the baseline.
+
+## Bachelor Courses, Tsinghua University
+
+### [Service Oriented Software Design and Development](https://github.com/JamesZFS/AntiNCP) (A+)
+- Design and develop a web-based system to analyze and visualize COVID-19 related information.
+- Integrate a web crawler to update COVID data and news periodically.
+- Apply clustering and statistical methods to extract the topics and keywords of news.
+- Design a beautiful frontend for visualizing geological and timeline data of diversed types.
+
+### [Fundamentals of Computer Graphics](https://github.com/JamesZFS/Pharosa) (A)
+- Implement a C++ physically-based renderer from scratch.
+- Advanced features: 
+  - [stochastic progressive photon mapping](https://cs.uwaterloo.ca/~thachisu/sppm.pdf) global illumination algorithm.
+  - ray intersection with Bezier surfaces through Newton's method.
+  - parse scene files from JSON.
+
+### [Fundamentals of Search Engine Technology](https://github.com/JamesZFS/ElasticJury) (A)
+- Develop a search engine for judiciary cases.
+- Implement a high-performance and high-concurrency GoLang backend.
+- Create dedicated MySQL commands to do fast and complex search queries.
+- Design and implement an intuitive and user-friendly frontend.
+
+### [Human-Computer Interaction Theory and Technology](https://github.com/JamesZFS/IntelliZoomer) (A-)
+- Propose and research on a mobile phone camera interaction app
+- Core features:
+  - Adjust the back camera's zoom ratio with the front camera's depth information.
+  - Auto "capture" triggering by smile detection.
+- Conduct a 14-user evaluation experiment and prove the effectiveness of our proposed app.
+
+### [Computer Organization](https://github.com/JamesZFS/MIPS-CPUer) (A-)
+- Design and implement a MIPS32 CPU in Verilog.
+- Highlighted features:
+  - Capable of running a tutorial operating system.
+  - Support several peripherals including DVI video output and flash storage.
+  - A fixed-point numerical system and a three-body problem simulation demo in MIPS assembly.
+
+### [Principles and Practice of Compiler Construction](https://github.com/JamesZFS/Decaf) (A)
+- Enhance a Java-like language compiler implemented in Rust.
+- Add functional programming features including lambda expressions and first-class functions.
+- Implement some compiling optimization actions and an [iterative global register allocation algorithm](http://www.cse.iitm.ac.in/~krishna/cs6013/george.pdf).
+
+### [Software Engineering](https://github.com/JamesZFS/AwesomeCoding) (A)
+- Develop a web-based live teaching platform for [Jisuanke Company](https://www.jisuanke.com/).
 
 ### Foundation of Object-Oriented Programming (A)
-* Designed and implemented two **physically-based** 2D games
-* [Project 1 repo](https://github.com/JamesZFS/Warzone), [Project 2 repo](https://github.com/JamesZFS/Plongeur)
-* Based on Qt and Google’s LiquidFun physics library
+- Design and implement two physically-based 2D games based on Qt and [LiquidFun](https://google.github.io/liquidfun/) physics engine.
+- [Repo 1](https://github.com/JamesZFS/Warzone), [repo 2](https://github.com/JamesZFS/Plongeur)
 
-Skills
-======
-* Programming skills
-  - Master C, C++, Python, JavaScript
+-----
+
+# Skills
+
+- Programming
+  - Proficient in C/C++, Python, JavaScript
   - Familiar with Go, Rust, MySQL, Swift, C#, Assembly, Mathematica, Unity
-* Language skills
-  - Mother tongue: Chinese
-  - TOEFL 105 (reading 28, listening 27, speaking 24, writing 26)
-  - GRE Verbal 156, Quantitative169, AW 4.0
-  - A little French
-* Hobbies & others
-  - Swimming, fitness, diving, skiing
-  - Saxophone, piano, chorus, a cappella, musical
+- Language
+  - Chinese: Native
+  - English: Fluent
+    - TOEFL 105 (reading 28, listening 27, speaking 24, writing 26)
+    - GRE Verbal 156, Quantitative 169, AW 4.0
+  - French: Intermediate (B1)
+  - German: Beginner (A1)
