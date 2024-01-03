@@ -5,7 +5,7 @@ collection: portfolio
 date: 2023-07-01
 ---
 
-As a native born here, Chengdu holds a special place in my heart, marking my memories of home and cultural belonging. Though it's well-known for its panda research base and spicy food, what truly sets it apart is the way people live and the urban design here.
+For a native born here, Chengdu holds a special place in my heart, marking my memories of home and cultural belonging. Though it's well-known for its panda research base and spicy food, what truly sets it apart is the way people live and the urban design here.
 
 You can lose yourself in a leisurely walk in the city parks, enjoy a cozy afternoon in a secret coffee bar, or have a cultural journey through an exhibition. Based on my personal experience of living, I refer to it as "the Paris in China".
 

@@ -42,9 +42,8 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 - Research on spatial subdivision for path guiding.
 
 ### Rendering Group, [Disney Research Studios](https://studios.disneyresearch.com/about-us/), Zurich, Switzerland
-- Semester thesis, Apr. 2023 - Jul. 2023
+- Semester thesis (6.0/6.0), Apr. 2023 - Jul. 2023
 - Research on improving the path sampling for realistic image synthesis using machine learning methods.
-- Got overall grade 6.0/6.0
 
 ### [Realistic Graphics Lab](https://rgl.epfl.ch/), EPFL, Lausanne, Switzerland
 - Summer research intern, Jun. 2022 - Sep. 2022
