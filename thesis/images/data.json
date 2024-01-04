@@ -1,0 +1,179 @@
+{
+  "title": "root",
+  "children": [
+    {
+      "title": "torus",
+      "children": [
+        {
+          "title": "Guided",
+          "image": "images/torus/guided_quality.exr"
+        },
+        {
+          "title": "Reference",
+          "image": "images/torus/reference.exr"
+        },
+        {
+          "title": "SMAPE",
+          "lossMap": {
+            "function": "SMAPE",
+            "imageA": "images/torus/guided_quality.exr",
+            "imageB": "images/torus/reference.exr"
+          }
+        },
+        {
+          "title": "MSE",
+          "lossMap": {
+            "function": "L2",
+            "imageA": "images/torus/guided_quality.exr",
+            "imageB": "images/torus/reference.exr"
+          }
+        }
+      ]
+    },
+    {
+      "title": "cbox-flipped-light",
+      "children": [
+        {
+          "title": "Guided",
+          "image": "images/cbox-flipped-light/guided_quality.exr"
+        },
+        {
+          "title": "Reference",
+          "image": "images/cbox-flipped-light/reference.exr"
+        },
+        {
+          "title": "SMAPE",
+          "lossMap": {
+            "function": "SMAPE",
+            "imageA": "images/cbox-flipped-light/guided_quality.exr",
+            "imageB": "images/cbox-flipped-light/reference.exr"
+          }
+        },
+        {
+          "title": "MSE",
+          "lossMap": {
+            "function": "L2",
+            "imageA": "images/cbox-flipped-light/guided_quality.exr",
+            "imageB": "images/cbox-flipped-light/reference.exr"
+          }
+        }
+      ]
+    },
+    {
+      "title": "cbox-classic",
+      "children": [
+        {
+          "title": "Guided",
+          "image": "images/cbox-classic/guided_quality.exr"
+        },
+        {
+          "title": "Reference",
+          "image": "images/cbox-classic/reference.exr"
+        },
+        {
+          "title": "SMAPE",
+          "lossMap": {
+            "function": "SMAPE",
+            "imageA": "images/cbox-classic/guided_quality.exr",
+            "imageB": "images/cbox-classic/reference.exr"
+          }
+        },
+        {
+          "title": "MSE",
+          "lossMap": {
+            "function": "L2",
+            "imageA": "images/cbox-classic/guided_quality.exr",
+            "imageB": "images/cbox-classic/reference.exr"
+          }
+        }
+      ]
+    },
+    {
+      "title": "bathroom2",
+      "children": [
+        {
+          "title": "Guided",
+          "image": "images/bathroom2/guided_quality.exr"
+        },
+        {
+          "title": "Reference",
+          "image": "images/bathroom2/reference.exr"
+        },
+        {
+          "title": "SMAPE",
+          "lossMap": {
+            "function": "SMAPE",
+            "imageA": "images/bathroom2/guided_quality.exr",
+            "imageB": "images/bathroom2/reference.exr"
+          }
+        },
+        {
+          "title": "MSE",
+          "lossMap": {
+            "function": "L2",
+            "imageA": "images/bathroom2/guided_quality.exr",
+            "imageB": "images/bathroom2/reference.exr"
+          }
+        }
+      ]
+    },
+    {
+      "title": "pbrt-book",
+      "children": [
+        {
+          "title": "Guided",
+          "image": "images/pbrt-book/guided_quality.exr"
+        },
+        {
+          "title": "Reference",
+          "image": "images/pbrt-book/reference.exr"
+        },
+        {
+          "title": "SMAPE",
+          "lossMap": {
+            "function": "SMAPE",
+            "imageA": "images/pbrt-book/guided_quality.exr",
+            "imageB": "images/pbrt-book/reference.exr"
+          }
+        },
+        {
+          "title": "MSE",
+          "lossMap": {
+            "function": "L2",
+            "imageA": "images/pbrt-book/guided_quality.exr",
+            "imageB": "images/pbrt-book/reference.exr"
+          }
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-entry",
+      "children": [
+        {
+          "title": "Guided",
+          "image": "images/sanmiguel-entry/guided_quality.exr"
+        },
+        {
+          "title": "Reference",
+          "image": "images/sanmiguel-entry/reference.exr"
+        },
+        {
+          "title": "SMAPE",
+          "lossMap": {
+            "function": "SMAPE",
+            "imageA": "images/sanmiguel-entry/guided_quality.exr",
+            "imageB": "images/sanmiguel-entry/reference.exr"
+          }
+        },
+        {
+          "title": "MSE",
+          "lossMap": {
+            "function": "L2",
+            "imageA": "images/sanmiguel-entry/guided_quality.exr",
+            "imageB": "images/sanmiguel-entry/reference.exr"
+          }
+        }
+      ]
+    }
+  ]
+}
