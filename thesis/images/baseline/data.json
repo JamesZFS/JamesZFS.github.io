@@ -1,0 +1,1766 @@
+{
+  "title": "root",
+  "children": [
+    {
+      "title": "torus",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/torus/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/torus/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/torus/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/torus/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/torus/guided_quality.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/torus/guided_quality.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/torus/guided_quality_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/torus/cache_id_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/torus/overlay_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/torus/guided_quality_t32.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/torus/guided_quality_t32.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/torus/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/torus/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/torus/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/torus/guided_quality_nee.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/torus/guided_quality_nee.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cosine Product Off",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/torus/guided_quality_cosoff.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/torus/cache_id_cosoff.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/torus/overlay_cosoff.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/torus/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/torus/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cbox-classic",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/cbox-classic/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/cbox-classic/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/cbox-classic/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/cbox-classic/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/cbox-classic/guided_quality.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/cbox-classic/guided_quality.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/cbox-classic/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/cbox-classic/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/cbox-classic/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/cbox-classic/guided_quality_nee.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/cbox-classic/guided_quality_nee.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cosine Product Off",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/cbox-classic/guided_quality_cosoff.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/cbox-classic/cache_id_cosoff.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/cbox-classic/overlay_cosoff.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/cbox-classic/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/cbox-classic/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cbox-flipped-light",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/cbox-flipped-light/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/cbox-flipped-light/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/cbox-flipped-light/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/cbox-flipped-light/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/cbox-flipped-light/guided_quality.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/cbox-flipped-light/guided_quality.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/cbox-flipped-light/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/cbox-flipped-light/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/cbox-flipped-light/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/cbox-flipped-light/guided_quality_nee.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/cbox-flipped-light/guided_quality_nee.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cosine Product Off",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/cbox-flipped-light/guided_quality_cosoff.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/cbox-flipped-light/cache_id_cosoff.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/cbox-flipped-light/overlay_cosoff.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/cbox-flipped-light/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/cbox-flipped-light/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pbrt-book",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/pbrt-book/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/pbrt-book/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/pbrt-book/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/pbrt-book/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/pbrt-book/guided_quality.exr",
+                "imageB": "images/baseline/pbrt-book/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/pbrt-book/guided_quality.exr",
+                "imageB": "images/baseline/pbrt-book/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/pbrt-book/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/pbrt-book/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/pbrt-book/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/pbrt-book/guided_quality_nee.exr",
+                "imageB": "images/baseline/pbrt-book/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/pbrt-book/guided_quality_nee.exr",
+                "imageB": "images/baseline/pbrt-book/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cosine Product Off",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/pbrt-book/guided_quality_cosoff.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/pbrt-book/cache_id_cosoff.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/pbrt-book/overlay_cosoff.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/pbrt-book/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/pbrt-book/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/pbrt-book/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/pbrt-book/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "projection-box",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/projection-box/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/projection-box/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/projection-box/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/projection-box/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/projection-box/guided_quality.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/projection-box/guided_quality.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "64 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/projection-box/guided_quality_t64.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/projection-box/cache_id_t64.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/projection-box/overlay_t64.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/projection-box/guided_quality_t64.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/projection-box/guided_quality_t64.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/projection-box/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/projection-box/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/projection-box/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/projection-box/guided_quality_nee.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/projection-box/guided_quality_nee.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mts-box-complex",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/mts-box-complex/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/mts-box-complex/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/mts-box-complex/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/mts-box-complex/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/mts-box-complex/guided_quality.exr",
+                "imageB": "images/baseline/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/mts-box-complex/guided_quality.exr",
+                "imageB": "images/baseline/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "64 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/mts-box-complex/guided_quality_t64.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/mts-box-complex/cache_id_t64.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/mts-box-complex/overlay_t64.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/mts-box-complex/guided_quality_t64.exr",
+                "imageB": "images/baseline/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/mts-box-complex/guided_quality_t64.exr",
+                "imageB": "images/baseline/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/mts-box-complex/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/mts-box-complex/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/mts-box-complex/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/mts-box-complex/guided_quality_nee.exr",
+                "imageB": "images/baseline/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/mts-box-complex/guided_quality_nee.exr",
+                "imageB": "images/baseline/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mts-box-three-lights",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/mts-box-three-lights/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/mts-box-three-lights/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/mts-box-three-lights/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/mts-box-three-lights/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/mts-box-three-lights/guided_quality.exr",
+                "imageB": "images/baseline/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/mts-box-three-lights/guided_quality.exr",
+                "imageB": "images/baseline/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "64 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/mts-box-three-lights/guided_quality_t64.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/mts-box-three-lights/cache_id_t64.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/mts-box-three-lights/overlay_t64.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/mts-box-three-lights/guided_quality_t64.exr",
+                "imageB": "images/baseline/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/mts-box-three-lights/guided_quality_t64.exr",
+                "imageB": "images/baseline/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/mts-box-three-lights/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/mts-box-three-lights/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/mts-box-three-lights/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/mts-box-three-lights/guided_quality_nee.exr",
+                "imageB": "images/baseline/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/mts-box-three-lights/guided_quality_nee.exr",
+                "imageB": "images/baseline/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-balcony-plants",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-balcony-plants/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-balcony-plants/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-balcony-plants/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-balcony-plants/guided_quality_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-balcony-plants/cache_id_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-balcony-plants/overlay_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality_t32.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality_t32.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "64 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-balcony-plants/guided_quality_t64.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-balcony-plants/cache_id_t64.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-balcony-plants/overlay_t64.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality_t64.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality_t64.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-balcony-plants/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-balcony-plants/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-balcony-plants/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality_nee.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality_nee.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cosine Product Off",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-balcony-plants/guided_quality_cosoff.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-balcony-plants/cache_id_cosoff.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-balcony-plants/overlay_cosoff.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-balcony-plants/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-in-tree",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/sanmiguel-in-tree/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-in-tree/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-in-tree/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-in-tree/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-in-tree/guided_quality_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-in-tree/cache_id_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-in-tree/overlay_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality_t32.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality_t32.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "64 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-in-tree/guided_quality_t64.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-in-tree/cache_id_t64.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-in-tree/overlay_t64.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality_t64.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality_t64.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-in-tree/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-in-tree/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-in-tree/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality_nee.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality_nee.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cosine Product Off",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-in-tree/guided_quality_cosoff.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-in-tree/cache_id_cosoff.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-in-tree/overlay_cosoff.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-in-tree/guided_quality_cosoff.exr",
+                "imageB": "images/baseline/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-entry",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/sanmiguel-entry/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-entry/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-entry/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-entry/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-entry/guided_quality.exr",
+                "imageB": "images/baseline/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-entry/guided_quality.exr",
+                "imageB": "images/baseline/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-entry/guided_quality_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-entry/cache_id_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-entry/overlay_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-entry/guided_quality_t32.exr",
+                "imageB": "images/baseline/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-entry/guided_quality_t32.exr",
+                "imageB": "images/baseline/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "64 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-entry/guided_quality_t64.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-entry/cache_id_t64.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-entry/overlay_t64.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-entry/guided_quality_t64.exr",
+                "imageB": "images/baseline/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-entry/guided_quality_t64.exr",
+                "imageB": "images/baseline/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sanmiguel-entry/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sanmiguel-entry/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sanmiguel-entry/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sanmiguel-entry/guided_quality_nee.exr",
+                "imageB": "images/baseline/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sanmiguel-entry/guided_quality_nee.exr",
+                "imageB": "images/baseline/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "bathroom2",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/bathroom2/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/bathroom2/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/bathroom2/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/bathroom2/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/bathroom2/guided_quality.exr",
+                "imageB": "images/baseline/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/bathroom2/guided_quality.exr",
+                "imageB": "images/baseline/bathroom2/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/bathroom2/guided_quality_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/bathroom2/cache_id_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/bathroom2/overlay_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/bathroom2/guided_quality_t32.exr",
+                "imageB": "images/baseline/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/bathroom2/guided_quality_t32.exr",
+                "imageB": "images/baseline/bathroom2/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "64 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/bathroom2/guided_quality_t64.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/bathroom2/cache_id_t64.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/bathroom2/overlay_t64.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/bathroom2/guided_quality_t64.exr",
+                "imageB": "images/baseline/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/bathroom2/guided_quality_t64.exr",
+                "imageB": "images/baseline/bathroom2/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/bathroom2/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/bathroom2/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/bathroom2/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/bathroom2/guided_quality_nee.exr",
+                "imageB": "images/baseline/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/bathroom2/guided_quality_nee.exr",
+                "imageB": "images/baseline/bathroom2/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "villa-daylight",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/villa-daylight/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/villa-daylight/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/villa-daylight/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/villa-daylight/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/villa-daylight/guided_quality.exr",
+                "imageB": "images/baseline/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/villa-daylight/guided_quality.exr",
+                "imageB": "images/baseline/villa-daylight/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/villa-daylight/guided_quality_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/villa-daylight/cache_id_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/villa-daylight/overlay_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/villa-daylight/guided_quality_t32.exr",
+                "imageB": "images/baseline/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/villa-daylight/guided_quality_t32.exr",
+                "imageB": "images/baseline/villa-daylight/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "64 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/villa-daylight/guided_quality_t64.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/villa-daylight/cache_id_t64.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/villa-daylight/overlay_t64.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/villa-daylight/guided_quality_t64.exr",
+                "imageB": "images/baseline/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/villa-daylight/guided_quality_t64.exr",
+                "imageB": "images/baseline/villa-daylight/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/villa-daylight/guided_quality_nee.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/villa-daylight/cache_id_nee.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/villa-daylight/overlay_nee.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/villa-daylight/guided_quality_nee.exr",
+                "imageB": "images/baseline/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/villa-daylight/guided_quality_nee.exr",
+                "imageB": "images/baseline/villa-daylight/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sponza-1",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/sponza-1/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sponza-1/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sponza-1/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sponza-1/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sponza-1/guided_quality.exr",
+                "imageB": "images/baseline/sponza-1/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sponza-1/guided_quality.exr",
+                "imageB": "images/baseline/sponza-1/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sponza-2",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/sponza-2/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sponza-2/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sponza-2/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sponza-2/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sponza-2/guided_quality.exr",
+                "imageB": "images/baseline/sponza-2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sponza-2/guided_quality.exr",
+                "imageB": "images/baseline/sponza-2/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sponza-3",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/sponza-3/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/baseline/sponza-3/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/baseline/sponza-3/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/baseline/sponza-3/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/baseline/sponza-3/guided_quality.exr",
+                "imageB": "images/baseline/sponza-3/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/baseline/sponza-3/guided_quality.exr",
+                "imageB": "images/baseline/sponza-3/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

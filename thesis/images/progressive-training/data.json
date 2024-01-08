@@ -1,0 +1,992 @@
+{
+  "title": "root",
+  "children": [
+    {
+      "title": "torus",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/torus/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/torus/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/torus/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/torus/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/torus/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/torus/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/torus/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/torus/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/torus/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/torus/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/torus/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/torus/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/torus/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/torus/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/torus/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/torus/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cbox-classic",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/cbox-classic/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/cbox-classic/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/cbox-classic/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/cbox-classic/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/cbox-classic/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/cbox-classic/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/cbox-classic/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/cbox-classic/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/cbox-classic/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/cbox-classic/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/cbox-classic/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/cbox-classic/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/cbox-classic/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/cbox-classic/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/cbox-classic/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/cbox-classic/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cbox-flipped-light",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/cbox-flipped-light/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pbrt-book",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/pbrt-book/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/pbrt-book/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/pbrt-book/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/pbrt-book/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/pbrt-book/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/pbrt-book/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/pbrt-book/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/pbrt-book/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/pbrt-book/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/pbrt-book/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/pbrt-book/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/pbrt-book/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/pbrt-book/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/pbrt-book/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/pbrt-book/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/pbrt-book/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "projection-box",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/projection-box/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/projection-box/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/projection-box/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/projection-box/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/projection-box/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/projection-box/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/projection-box/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/projection-box/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/projection-box/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/projection-box/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/projection-box/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/projection-box/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/projection-box/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/projection-box/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/projection-box/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/projection-box/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mts-box-complex",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/mts-box-complex/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mts-box-three-lights",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/mts-box-three-lights/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-balcony-plants",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/sanmiguel-balcony-plants/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-in-tree",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/sanmiguel-in-tree/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-entry",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/sanmiguel-entry/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "bathroom2",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/bathroom2/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/bathroom2/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/bathroom2/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/bathroom2/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/bathroom2/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/bathroom2/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/bathroom2/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/bathroom2/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/bathroom2/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/bathroom2/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/bathroom2/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/bathroom2/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/bathroom2/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/bathroom2/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/bathroom2/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/bathroom2/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "villa-daylight",
+      "children": [
+        {
+          "title": "Default",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/villa-daylight/overlay-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/villa-daylight/overlay-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/villa-daylight/overlay-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/villa-daylight/overlay-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/villa-daylight/overlay-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/villa-daylight/overlay-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/villa-daylight/overlay-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/villa-daylight/overlay-7spp.exr"
+            }
+          ]
+        },
+        {
+          "title": "NEE On",
+          "children": [
+            {
+              "title": "1 spp",
+              "image": "images/progressive-training/villa-daylight/overlay_nee-1spp.exr"
+            },
+            {
+              "title": "2 spp",
+              "image": "images/progressive-training/villa-daylight/overlay_nee-2spp.exr"
+            },
+            {
+              "title": "3 spp",
+              "image": "images/progressive-training/villa-daylight/overlay_nee-3spp.exr"
+            },
+            {
+              "title": "4 spp",
+              "image": "images/progressive-training/villa-daylight/overlay_nee-4spp.exr"
+            },
+            {
+              "title": "5 spp",
+              "image": "images/progressive-training/villa-daylight/overlay_nee-5spp.exr"
+            },
+            {
+              "title": "6 spp",
+              "image": "images/progressive-training/villa-daylight/overlay_nee-6spp.exr"
+            },
+            {
+              "title": "7 spp",
+              "image": "images/progressive-training/villa-daylight/overlay_nee-7spp.exr"
+            },
+            {
+              "title": "8 spp",
+              "image": "images/progressive-training/villa-daylight/overlay_nee-7spp.exr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sponza-1",
+      "children": [
+        {
+          "title": "Default",
+          "children": []
+        },
+        {
+          "title": "NEE On",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "sponza-2",
+      "children": [
+        {
+          "title": "Default",
+          "children": []
+        },
+        {
+          "title": "NEE On",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "sponza-3",
+      "children": [
+        {
+          "title": "Default",
+          "children": []
+        },
+        {
+          "title": "NEE On",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
