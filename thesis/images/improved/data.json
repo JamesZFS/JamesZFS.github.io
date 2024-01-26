@@ -1,0 +1,325 @@
+{
+  "title": "root",
+  "children": [
+    {
+      "title": "torus",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/torus/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/torus/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/torus/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/torus/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/torus/guided_quality.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/torus/guided_quality.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance-based Split",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/torus/guided_quality_varsplit.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/torus/cache_id_varsplit.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/torus/overlay_varsplit.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/torus/guided_quality_varsplit.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/torus/guided_quality_varsplit.exr",
+                "imageB": "images/baseline/torus/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cbox-classic",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/cbox-classic/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-classic/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-classic/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-classic/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-classic/guided_quality.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-classic/guided_quality.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance-based Split",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-classic/guided_quality_varsplit.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-classic/cache_id_varsplit.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-classic/overlay_varsplit.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-classic/guided_quality_varsplit.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-classic/guided_quality_varsplit.exr",
+                "imageB": "images/baseline/cbox-classic/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cbox-flipped-light",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/cbox-flipped-light/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-flipped-light/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-flipped-light/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-flipped-light/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-flipped-light/guided_quality.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-flipped-light/guided_quality.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance-based Split",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-flipped-light/guided_quality_varsplit.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-flipped-light/cache_id_varsplit.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-flipped-light/overlay_varsplit.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-flipped-light/guided_quality_varsplit.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-flipped-light/guided_quality_varsplit.exr",
+                "imageB": "images/baseline/cbox-flipped-light/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "projection-box",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/baseline/projection-box/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance-based Split",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality_varsplit.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id_varsplit.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay_varsplit.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality_varsplit.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality_varsplit.exr",
+                "imageB": "images/baseline/projection-box/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
