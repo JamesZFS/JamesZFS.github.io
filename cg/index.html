@@ -1,0 +1,640 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nori Renderer</title>
+
+    <link href="resources/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/offcanvas.css" rel="stylesheet">
+    <link href="resources/custom2014.css" rel="stylesheet">
+    <link href="resources/twentytwenty.css" rel="stylesheet" type="text/css"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body>
+
+
+<style>
+.gallery {
+    display: grid;
+    /* align-items: center;  */
+    grid-template-columns: 0fr 1.5fr 2fr;
+    column-gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: auto;
+}
+</style>
+
+<div class="container headerBar">
+    <h1>Nori Renderer - Computer Graphics Project</h1>
+</div>
+
+<div class="container contentWrapper">
+<div class="pageContent">
+
+    <div class="container gallery">
+        <div class="image">
+            <img src="images/final.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="text">
+            <p>
+                This is my offline renderer for the <a href="https://cgl.ethz.ch/teaching/cg22/home.php">Computer Graphics</a> course project at ETH, aiming at implementing and investigating physics-based rendering algorithms, with rigorous validation to show correctness of the selected features. It is based on <a href="https://cgl.ethz.ch/teaching/cg22/www-nori/index.html">Nori</a>, an educational rendering framework.
+            </p>
+            <p>
+                It supports features including: 
+            </p>
+            <ol>
+                <li>Light transport algorithms:
+                    <ul>
+                        <li>Path tracing with multiple importance sampling.</li>
+                        <li>Photon mapping.</li>
+                    </ul>
+                </li>
+                <li><a href="#volpath">Homogeneous and heterogeneous participating Media:</a>
+                    <ul>
+                        <li>Spectrally varying scattering coefficients.</li>
+                        <li>Reading 3D volume density grid from NanoVDB files.</li>
+                        <li>Trilinear interpolation of grid density.</li>
+                        <li>Ratio tracking for transmittance evaluation.</li>
+                        <li>Importance sampling of volumetric emission.</li>
+                        <li><a href="#anis">Henyey-Greenstein phase function.</a></li>
+                    </ul>
+                </li>
+                <li><a href="#texture">Images as textures with bilinear interpolation.</a>
+                </li>
+        
+                <li>Denoising:
+                    <ul>
+                        <li><a href="#denoise">Bilateral filter denoise with pixel variance estimates.</a></li>
+                        <li><a href="#joint">Joint bilateral filter with auxiliary feature buffers.</a></li>
+                    </ul>
+                </li>
+        
+                <li>Materials:
+                    <ul>
+                        <li>Diffuse, mirror, and dielectric BSDFs.</li>
+                        <li>Microfacet BSDF.</li>
+                        <li><a href="#disney">Disney BSDF.</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="#stratified">Stratified sampler.</a></li>
+
+                <li>Resampled importance sampling.</li>
+        
+                <li>Depth-of-field camera.</li>
+                
+                <li><a href="#procedural">Procedural generation of a night city scene.</a></li>
+            </ol>
+
+            <p>
+                Note: due to permission issues from the course side, we are not allowed to open source the code for now. This page only demonstrates the result and project report.
+            </p>
+        </div>
+    </div>
+
+    <h2>Motivation</h2>
+    <p>
+    Our final submission is a surreal scene where a modern city is surrounded in a tiny wine glass, creating an abrupt contradiction of
+    the seemingly enormous human civilization and its narrowness in a grander universe.
+    </p>
+    <p>
+    We wish to convey the message that human beings, intelligent and sophisticated as they think, might ultimately be a rather simple and humble
+    form of living from a perspective of a greater civilization in a higher dimension. The so-called science discoveries, technology advancements,
+    and complications of urban lives, could in reality be nothing but a simulation of "brain in a vat".
+    </p>
+    <br>
+
+    <h2>Feature Validation and Report</h2>
+
+    <a id="volpath"><h3>Volume Rendering with Multiple Importance Sampling</h3></a>
+
+    <h4>Demo</h4>
+
+    <p>
+        Our volume path tracer can handle homogeneous/heterogeneous media of arbitrary bounding shapes, with or without emission. It is validated against
+        Mitsuba and verified against normal path tracer (in the case of zero scattering coefficients), thus proven to be unbiased.
+        MIS is supported.
+    </p>
+
+    <p>
+        Our volume path tracer can even handle the case when scattering coefficients of the media are spectrally varying, i.e.
+        when \(\sigma_t\) has different RGB components, illustrated in the <a href="#spectral-vol">validation</a>.
+    </p>
+
+    <p>Cornell Box scene with a global fog-like medium and a bunny-shaped smoke-like medium:
+    </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/volume/cbox_bunny.png" alt="" class="img-responsive">
+    </div>
+    <br>
+
+    <p>Cornell Box scene with smoke-shaped heterogeneous medium:
+    </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/volume/smoke.png" alt="" class="img-responsive">
+    </div>
+    <br>
+
+    <h4>Technical Details</h4>
+
+    <p>
+        The naive implementation (material sampling, MATS) follows the pseudocode in the lecture. It is easily unbiased, compared to Mitsuba.
+        Basically we keep track of the ray's current media and goes to surface interaction or volume interaction cases depending on both
+        this variable and the free flight distance.
+    </p>
+
+    <p>
+        A novel MIS version that performs the emitter sampling whether inside or outside the (single or nested) media is also implemented, and
+        <a href="#mis-vol">proven to unbiased and more efficient than normal MATS version</a>.
+        Unlike Mitsuba3 that does multiple ray intersection tests in a single EM sample,
+        we designed a tailored ray intersect interface(<tt>scene.h/rayIntersectThroughMedia</tt>) that handles multiple media boundary
+        intersections in a row, and
+        returns the throughput on the fly. This is also tested to be very efficient both in terms of runtime and noise.
+    </p>
+
+    <p>
+        Some state variables for the previous intersection are stored to compute the pdf of the MAT sample and the MIS weight correctly.
+    </p>
+
+    <p>
+        To describe the media's boundary, we store the exterior and interior media pointers of a shape/emitter, in the hope that the user (artist)
+        can guarantee the consistency of media change (e.g., different ray samples that end up traveling in the current volume
+        should always have the same media state).
+        Change of media is handled only when we sample the transmission lobe of the BSDF.
+    </p>
+
+    <h4>Validation</h4>
+
+    <p>Constant media case (2048spp).</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/volume/cbox_in_fog-ours.png" alt="Ours" class="img-responsive">
+        <img src="images/volume/cbox_in_fog-mit.png" alt="Mitsuba" class="img-responsive">
+    </div>
+    <br>
+
+    <p id="spectral-vol">Spectrally varying media case (2048spp).</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/volume/cbox_in_fog_green-ours.png" alt="Ours" class="img-responsive">
+        <img src="images/volume/cbox_in_fog_green-mit.png" alt="Mitsuba" class="img-responsive">
+    </div>
+    <br>
+
+    <p id="mis-vol">Comparing MIS with MATS (128spp) (the left and right "spheres" are now a bunch of media)</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/volume/cbox_multiple_volumes_mis.png" alt="MIS" class="img-responsive">
+        <img src="images/volume/cbox_multiple_volumes_mats.png" alt="MATS" class="img-responsive">
+    </div>
+    <br>
+
+    <p>One can see the significant variance improvement of MIS over MATS. Besides, we also proved its unbiaseness by
+        computing the mean error in Tev.
+    </p>
+
+    <a id="anis"><h3>Anisotropic Phase Function</h3></a>
+
+    <h4>Demo</h4>
+
+    <p>
+        Henyey-Greenstein phase function is implemented to describe anistropic scattering, which supports the average cosine parameter in the range \(-1 \le g \le 1\).
+        Please see the validation section for the feature demo.
+    </p>
+
+    <h4>Technical Details</h4>
+
+    <p>
+        Implementing a phase function is three folds: eval, sample, and pdf. What's simpler than that of the BSDF is we always
+        exactly sample the phase function, which means pdf equals eval.
+        Implementing eval is straightforwardly following the formula, whereas sample needs us to do the integral of the phase
+        function by hand and warp using sqrt, sin, cos functions etc.
+    </p>
+
+    <h4>Validation</h4>
+
+    <p>Verification with isotropic phase function at g = 0 (512spp). </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/volume/cbox_in_fog_hg_g=0.png" alt="Henyey-Greenstein" class="img-responsive">
+        <img src="images/volume/cbox_in_fog_iso.png" alt="Isotropic" class="img-responsive">
+    </div>
+    <br>
+
+    <p>Comparison with Mitsuba 3 (512spp).
+        <a href="../../scenes/demo/volume/cbox_in_fog_hg_g=0.5.xml">Our scene1</a>,
+        <a href="../../scenes/demo/volume/cbox_in_fog_hg_g=-0.5.xml">Our scene2</a>;
+        <a href="../../scenes/demo/volume/cbox_in_fog_hg_g=0.5_mi.xml">Mitsuba scene1</a>,
+        <a href="../../scenes/demo/volume/cbox_in_fog_hg_g=-0.5_mi.xml">Mitsuba scene2</a>;
+    </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/volume/cbox_in_fog_hg_g=0.5-ours.png" alt="Ours g = 0.5" class="img-responsive">
+        <img src="images/volume/cbox_in_fog_hg_g=0.5-mit.png" alt="Mitsuba g = 0.5" class="img-responsive">
+        <img src="images/volume/cbox_in_fog_hg_g=-0.5-ours.png" alt="Ours g = -0.5" class="img-responsive">
+        <img src="images/volume/cbox_in_fog_hg_g=-0.5-mit.png" alt="Mitsuba g = -0.5" class="img-responsive">
+    </div>
+    <br>
+
+
+    <a id="texture"><h3>Images as Textures</h3></a>
+
+    <h4>Demo</h4>
+
+    <p>
+        We allow the user to specify an image from the disk as an albedo texture for the diffuse and principled BSDFs.
+        Multiple formats (LDR, HDR, and EXR) are supported. As a proof of concept, only repeating wrap mode is implemented.
+        We implemented two types of filters: nearest and bilinear interpolation.
+    </p>
+
+    <p>Please see the validation section for the feature demo.</p>
+
+    <h4>Technical Details</h4>
+
+    <p>
+        First we improved the <tt>Bitmap</tt> class a bit, by adding the <tt>readHDR</tt> and <tt>readLDR</tt> functions, using
+        the external library <tt>stb_image.h</tt>.
+    </p>
+
+    <p>
+        In the texture's eval function, one just transforms the UV to the image space and queries the image value at the rounded
+        indices, or 4 neighboring indices using bilinear interpolation.
+    </p>
+
+    <h4>Validation</h4>
+
+    <p>Comparing bitmap texture with checkerboard texture.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/texture/camel_tex.png" alt="Texture" class="img-responsive">
+        <img src="images/texture/camel_checker.png" alt="Checkerboard" class="img-responsive">
+    </div>
+    <br>
+
+    <p>Comparison with Mitsuba 3.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/texture/cbox_tex-ours.png" alt="Ours" class="img-responsive">
+        <img src="images/texture/cbox_tex-mit.png" alt="Mitsuba" class="img-responsive">
+    </div>
+    <br>
+
+
+    <a id="denoise"><h3>Bilateral Denoising</h3></a>
+
+    <h4>Demo</h4>
+
+    <p>
+        Two bilateral-filter-based denoisings are implemented: simple bilateral filter using color and variance, and
+        joint bilateral filter using auxiliary feature buffers (see the forth section).
+    </p>
+
+    <p>
+        For the simple bilateral denoiser, two user-defined parameters are accepted: one for the pixel space distance scale
+        \(\sigma_s\), and another for the color space's \(k_s\).
+    </p>
+
+    <p>House scene, AV renderer. Here we showcase the improvement of applying a denoiser compared to the noisy input and reference.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/denoise/house_av_noisy.png" alt="Input (8spp)" class="img-responsive">
+        <img src="images/denoise/house_av_denoised.png" alt="Denoised" class="img-responsive">
+        <img src="images/denoise/house_av_ref.png" alt="Reference (512spp)" class="img-responsive">
+    </div>
+    <br>
+
+    <p>Cornell Box scene, path tracing. Showcasing the improvement of applying a denoiser compared to the noisy input and reference.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/denoise/cbox2_noisy.png" alt="Input (8spp)" class="img-responsive">
+        <img src="images/denoise/cbox2_denoised_two_vars.png" alt="Denoised" class="img-responsive">
+        <img src="images/denoise/cbox2_ref.png" alt="Reference (512spp)" class="img-responsive">
+    </div>
+    <br>
+
+    One can see that our simple denoiser produces smoother results than the noisy inputs, yet suffering from some artifacts such
+    as over-blurring or deforming the high-frequency regions in the rendering. Hence, trading off blurring (\(\sigma_s\)) and
+    keeping (\(k_s\)) plays a vital role.
+
+    <h4>Technical Details</h4>
+
+    <p>
+        Since different denoisers use different buffers, we changed the rendering pipeline in <tt>main.cpp</tt> so that the
+        collection process of variance and auxiliary feature buffers can be done simultaneously as the primal rendering goes on.
+    </p>
+
+    <p>
+        To compute the empirical variance, we store the mean and mean of the second momentum of radiance to two
+        other <tt>ImageBlock</tt>, every time the integrator
+        returns an Li.
+
+        For reusability, a new wrapper class <tt>MultiBufferBlock</tt> was created, in <tt>block.h</tt>.
+
+        To avoid the unwanted reconstruction filter and reuse the framework code, a static box filter instance is
+        passed in to the <tt>MultiBufferBlock</tt> for reconstructing variance and feature buffers.
+    </p>
+
+    <p>
+        For the bilateral denoiser, it simply iterates through all pixels p, then collects all its neighbors q's bilateral
+        weight and contribution, and finally normalizes pixel p.
+
+        The weighting kernel is simply the exponential pixel space squared distance multiplied by the exponential of
+        color space squared distance, which exploits the empirical variances of both pixel p and q.
+    </p>
+
+    <h4>Validation</h4>
+
+    <p>One interesting doubt is why we need to use the two-pixel variance, suggested in the lecture:
+        $$d^2(p, q)=\frac{(u(p)-u(q))^2-(\operatorname{Var}[p]+\min (\operatorname{Var}[q],
+        \operatorname{Var}[p]))}{\epsilon+k^2(\operatorname{Var}[p]+\operatorname{Var}[q])}$$
+        than just the variance at pixel p, or even a constant user-defined value \(\sigma_c\).
+    </p>
+
+    <p>To verify our two-pixel variance is better, we did the following test:
+    </p>
+
+    <p>Cornell Box scene, comparison with different filter kernels.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/denoise/cbox2_noisy.png" alt="Input (8spp)" class="img-responsive">
+        <img src="images/denoise/cbox2_denoised_const_var.png" alt="Constant Variance" class="img-responsive">
+        <img src="images/denoise/cbox2_denoised_one_var.png" alt="One Pixel Variance" class="img-responsive">
+        <img src="images/denoise/cbox2_denoised_two_vars.png" alt="Two Pixel Variance (Ours)" class="img-responsive">
+    </div>
+    <br>
+
+    <p>As you can see, the constant variance treats the color kernel uniformly, causing over-blurs everywhere.
+        Exploiting one-pixel or two-pixel variance greatly helps the denoiser to determine which pixel contributes more.
+        However, in our naive scene, differences between the latter ones are subtle.
+    </p>
+
+    <a id="joint"><h3>Joint Bilateral Filter with Auxiliary Feature Buffers</h3></a>
+
+    <p>Our integrator is able to collect auxiliary features on the fly.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/denoise/cbox_var.png" alt="Variance" class="img-responsive">
+        <img src="images/denoise/cbox_albedo.png" alt="Albedo" class="img-responsive">
+        <img src="images/denoise/cbox_normal.png" alt="Normal" class="img-responsive">
+        <img src="images/denoise/cbox_position.png" alt="Position" class="img-responsive">
+    </div> <br>
+
+    <p>With the help of these auxiliary buffers, the denoiser can find smarter ways to reduce the noise while preserving important visual cues.</p>
+
+    <p>Cornell Box Scene, Comparing joint bilateral filter with bilateral filter</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/denoise/cbox_noisy.png" alt="Input (200spp)" class="img-responsive">
+        <img src="images/denoise/cbox_ref.png" alt="Reference (2048spp)" class="img-responsive">
+        <img src="images/denoise/cbox_bilateral.png" alt="Bilateral" class="img-responsive">
+        <img src="images/denoise/cbox_joint.png" alt="Joint" class="img-responsive">
+    </div> <br>
+
+
+    <a id="disney"><h3>Disney Principled BSDF</h3></a>
+
+    <h4>Demo</h4>
+
+    <p>
+        We provided 6 user-set parameters for our principled BSDF: albedo (aka. base color, can be textured),
+        metallic, specular (equivalent to relative IOR), roughness, sheen, and subsurface (aka. flatness, or fake subsurface).
+
+        Our result aligns with Mitsuba3.
+    </p>
+
+    <p>
+        A diffuse case (32spp)
+    </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/material/prin_diff.png" alt="" class="img-responsive">
+    </div>
+    <br>
+
+    <p>
+        Multiple specular cases. Multiple Material Testballs (32spp), (metallic, specular) from left ball to right ball:
+        (0.01, 0.01), (0.95, 0.01), (0.05, 0.95), (0.99, 0.99).
+    </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/material/prin_multi_1.png" alt="" class="img-responsive">
+    </div>
+    <br>
+
+    <h4>Technical Details</h4>
+
+    <p>Due to the mathematical complexity and rapidly changing conventions in rendering industry, we chose to follow and align
+        with only one reference renderer - Mitsuba3. A large part of the implementations were adapted from
+        <a href="https://github.com/mitsuba-renderer/mitsuba3/blob/master/src/bsdfs/principled.cpp">their code base</a>.
+    </p>
+
+    <p>Since their principled BSDF depends on GGX microfacet model, we first refactored the code of our microfacet material and created a helper class to wrap the math of GGX and Beckmann distribution.
+    </p>
+
+    <p>
+        Implementing the eval function is straightforward, by computing some common parameters, and mixing in (in our case) the
+        diffuse, specular, subsurface, and sheen lobes.
+    </p>
+
+    <p>
+        Sampling is, however, more challenging and interesting. The naive way just samples the cosine hemisphere, similar to
+        the diffuse BSDF, which of course makes the specular case suffer.
+    </p>
+
+    <p>
+        A smarter would be to rewrite the eval formula into an linear interpolation between the specular and the diffuse
+        lobe, with a manually set parameter <tt>prSpecLobe</tt>. In the sample routine, we first draw a Bernoulli
+        random sample ~ <tt>prSpecLobe</tt> to decide which lobe to go into. Then, we return the importance BSDF,
+        with a scheme similar to microfacet BSDF.
+
+        Note that if we go to the specular lobe, importance will be divided by <tt>prSpecLobe</tt>, whereas in the diffuse lobe
+        it will be divided by <tt>1 - prSpecLobe</tt>.
+    </p>
+
+    <p>
+        Now we need to come up with a heuristic for parameter <tt>prSpecLobe</tt>. We provided two options:
+        1. <tt>lerp(max(metallic, specular), delta, 1 - delta)</tt> where <tt>delta</tt> is very small to avoid div-by-zero issue
+        led by importance scaling;
+        2. <tt>(metallic + specular + metallic * specular) / (1 + specular + metallic * specular)</tt>, as a simplified formula
+        inspired by Mitsuba's scheme.
+        The intuition is that the specular lobe contribution is related to both specular and metallic parameter.
+    </p>
+
+    <p>Comparison of different sampling heuristics can be found <a href="#heuristic-disney">here</a>.</p>
+
+    <h4>Validation</h4>
+
+    <p>
+        Various comparisons with Mitsuba are performed, with results listed as below.
+    </p>
+
+    <p>Material Testball (32spp), diffuse case.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/material/prin_diff.png" alt="Ours" class="img-responsive">
+        <img src="images/material/prin_diff_mi.png" alt="Mitsuba" class="img-responsive">
+    </div>
+    <br>
+
+    <p>Material Testball (32spp), specular case.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/material/prin_spec.png" alt="Ours" class="img-responsive">
+        <img src="images/material/prin_spec_mi.png" alt="Mitsuba" class="img-responsive">
+    </div>
+    <br>
+
+    <p>Note that the major difference is due to the environment map's coordinate convention.</p>
+
+    <p>Multiple Material Testball (64spp), various specular case. (metallic, specular) from left ball to right ball:
+        (0.01, 0.01), (0.95, 0.01), (0.05, 0.95), (0.99, 0.99).
+    </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/material/prin_multi.png" alt="Ours" class="img-responsive">
+        <img src="images/material/prin_multi_mi.png" alt="Mitsuba" class="img-responsive">
+    </div>
+    <br>
+
+    <p>Multiple Material Testball (64spp), various sheen/subsurface case. (sheen, subsurface) from left ball to right ball:
+        (0.0, 0.1), (1.0, 0.1), (0.2, 0.0), (0.2, 1.0).
+    </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/material/prin_sheen.png" alt="Ours" class="img-responsive">
+        <img src="images/material/prin_sheen_mi.png" alt="Mitsuba" class="img-responsive">
+    </div>
+    <br>
+
+    <p id="heuristic-disney">
+        Multiple Material Testballs (32spp), comparing naive sampling with our two importance sampling heuristics.
+        (metallic, specular) from left ball to right ball:
+        (0.01, 0.01), (0.95, 0.01), (0.05, 0.95), (0.99, 0.99)
+    </p>
+
+    <div class="twentytwenty-container">
+        <img src="images/material/prin_multi_0.png" alt="Importance 0" class="img-responsive">
+        <img src="images/material/prin_multi_1.png" alt="Importance 1(default)" class="img-responsive">
+        <img src="images/material/prin_multi_naive.png" alt="Naive" class="img-responsive">
+        <img src="images/material/prin_multi_mi.png" alt="Mitsuba" class="img-responsive">
+    </div>
+    <br>
+
+    <p>
+        Naive suffers from severe noise due to the specularity of the BSDF. Heuristics 0 enjoys some improvement, but not robust
+        when metallic is small but specular is large. Heuristics 1 is better in general, with quality on par with Mitsuba's.
+    </p>
+
+    <p>This concludes the robustness of our second sampling heuristics across different metallic/specular settings.</p>
+
+
+    <a id="stratified"><h3>Stratified Sampling</h3></a>
+
+    <h4>Demo</h4>
+
+    <p>
+        Our stratified sampler takes a squared number sample count, systematically sample the 1D/2D space, and yields a lower-variance
+        Monte Carlo estimate.
+    </p>
+
+    <p>Sphere Scene, direct, comparing against independent sampler (16spp).</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/sampler/sphere_ind.png" alt="Independent" class="img-responsive">
+        <img src="images/sampler/sphere_stra.png" alt="Stratified" class="img-responsive">
+    </div>
+    <br>
+
+    <p>Table Scene, path MIS, comparing against independent sampler (64spp)</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/sampler/table_path_mis_ind.png" alt="Independent" class="img-responsive">
+        <img src="images/sampler/table_path_mis_stra.png" alt="Stratified" class="img-responsive">
+    </div>
+    <br>
+
+    <p>For simple integrators such as AV or Direct, the improvement is significant because the path space is small in dimensions,
+        making the stratified sampling easy. However, such "free-lunch" is gone in complex integrators like volume path tracer.
+    </p>
+
+    <h4>Technical Details</h4>
+
+    <p>For the stratified sampler to work, we must extend the rendering pipeline so that <tt>generate()</tt> is called at
+        the beginning of rendering each pixel, and <tt>advance</tt> is called after each sample-per-pixel iteration.
+    </p>
+
+    <p>Some variables are introduced to record the current sample space dimension and sample index.</p>
+
+    <p>
+        Permutation of sample index over total sample count is first implemented using a 2D vector, mapping a dimension and a
+        sample index into a permuted index. Such mechanics must run dynamically because the sampler has no idea how many dimensions
+        will eventually be there in the integrator. The drawback is obvious-high cache miss rate and indirection cost.
+    </p>
+
+    <p>
+        An improvement was made, thanks to the pseudocode in the <a href="https://graphics.pixar.com/library/MultiJitteredSampling/">
+        Pixar's paper</a>, such that the permutation can be encoded via an xor shift function. So the 2D vector is retired!
+    </p>
+
+    <a id="procedural"><h3>Procedural Generation</h3></a>
+    
+    <p>We craft the night city in the final scene by generating its scene file procedurally. The script instantiates building presets at locations on a grid, with random heights following Gaussian distributions, and random number of windows serving as light sources. It takes parameters such as number of buildings, height amplitude and frequency to make the generation process controllable. The city is inspired by <a href="https://dl.acm.org/doi/10.1145/3233305">this paper</a>.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/city.png" alt="" class="img-responsive">
+    </div> <br>
+
+
+    <a id="others"><h3>Minor Features</h3></a>
+
+    <p>Twosided BSDF is created, inspired by Mitsuba, in which sides of the material share the same BSDF property.</p>
+
+    <p>Reflectance albedo for microfacet BSDF is introduced.</p>
+
+    <p>GGX distribution microfacet BSDF is supported, as a by-product of the principled BSDF feature.</p>
+
+    <div class="twentytwenty-container">
+        <img src="images/material/micro_beckmann.png" alt="Beckmann Ours" class="img-responsive">
+        <img src="images/material/micro_mi_beckmann.png" alt="Beckmann Mitsuba" class="img-responsive">
+        <img src="images/material/micro_ggx.png" alt="GGX Ours" class="img-responsive">
+        <img src="images/material/micro_mi_ggx.png" alt="GGX Mitsuba" class="img-responsive">
+    </div> <br>
+
+    <h2>Final Rendering</h2>
+
+    <div class="twentytwenty-container">
+        <img src="images/final.jpg" alt="" class="img-responsive">
+    </div> <br>
+
+</div>
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="resources/bootstrap.min.js"></script>
+<script src="resources/jquery.event.move.js"></script>
+<script src="resources/jquery.twentytwenty.js"></script>
+
+
+<script>
+    $(window).load(function () {
+        $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
+    });
+</script>
+
+</body>
+</html>
