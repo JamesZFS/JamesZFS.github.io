@@ -78,7 +78,7 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 
 ## Master Courses, ETH Zurich
 
-### Computer Graphics (6.0/6.0)
+### [Computer Graphics](/cg/index.html) (6.0/6.0)
 - Implement a physics-based renderer based on [Nori](https://cgl.ethz.ch/teaching/cg22/www-nori/index.html), an tutorial rendering framework.
 - Advanced features:
   - Render participating media (clouds, smoke, etc) with multiple importance sampling.
