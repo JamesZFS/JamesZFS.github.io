@@ -82,8 +82,7 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 
 ### [Computer Graphics](/cg/index.html) (6.0/6.0)
 
-| ![cg1](/images/projects/cg1.jpg) | ![cg2](/images/projects/cg2.png) |
-| ---- | ---- |
+![cg](/images/projects/cg.png)
 
 - Implement a physics-based renderer based on [Nori](https://cgl.ethz.ch/teaching/cg22/www-nori/index.html), an tutorial rendering framework.
 - Advanced features:
@@ -93,7 +92,7 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 
 ### [Scientific Visualization](https://github.com/JamesZFS/zwickypixies)
 
-![scivis](/images/projects/scivis2.png)
+![scivis](/images/projects/scivis.png)
 
 - Develop a real-time visualization application for cosmology simulation based on VTK library.
 - Support interactive rendering of various particle properties (temperature, potential, velocity, etc).
@@ -116,8 +115,7 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 
 ### [Service Oriented Software Design and Development](https://github.com/JamesZFS/AntiNCP) (A+)
 
-| ![soa1](/images/projects/soa1.png) | ![soa2](/images/projects/soa2.png) |
-| ---- | ---- |
+![soa](/images/projects/soa.png)
 
 - Design and develop a web-based system to analyze and visualize COVID-19 related information.
 - Integrate a web crawler to update COVID data and news periodically.
@@ -136,8 +134,7 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 
 ### [Fundamentals of Search Engine Technology](https://github.com/JamesZFS/ElasticJury) (A)
 
-| ![search1](/images/projects/search-engine1.png) | ![search2](/images/projects/search-engine2.png) |
-| ---- | ---- |
+![search](/images/projects/search.png)
 
 - Develop a search engine for judiciary cases.
 - Implement a high-performance and high-concurrency GoLang backend.
@@ -168,8 +165,7 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 
 ### Foundation of Object-Oriented Programming (A)
 
-| ![oop1](/images/projects/oop1.png) | ![oop2](/images/projects/oop2.png) |
-| ---- | ---- |
+![oop](/images/projects/oop.png)
 
 - Design and implement two physically-based 2D games based on Qt and [LiquidFun](https://google.github.io/liquidfun/) physics engine.
 - [Repo 1](https://github.com/JamesZFS/Warzone), [repo 2](https://github.com/JamesZFS/Plongeur)
