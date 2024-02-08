@@ -90,12 +90,16 @@ Here's a pdf version of my [CV](/files/cv.pdf)
   - Implement Disney BSDF, an appearance model widely used in production.
   - Procedural generation of a night city scene.
 
+<br>
+
 ### [Scientific Visualization](https://github.com/JamesZFS/zwickypixies)
 
 ![scivis](/images/projects/scivis.png)
 
 - Develop a real-time visualization application for cosmology simulation based on VTK library.
 - Support interactive rendering of various particle properties (temperature, potential, velocity, etc).
+
+<br>
 
 ### [Physics-based Simulation](https://github.com/Fiona730/Position-Based-Fluids-Taichi) (5.75/6.0)
 
@@ -104,12 +108,16 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 - Implement [position based fluid](https://mmacklin.com/pbf_sig_preprint.pdf) simulation based on [Taichi](https://www.taichi-lang.org/).
 - Handle fluid-solid interaction through collision detection.
 
+<br>
+
 ### [Advanced Systems Lab](https://github.com/Fiona730/SPPM-CPU-Optimization?tab=readme-ov-file) (5.75/6.0)
 
 ![asl](/images/projects/asl.png)
 
 - Implement and optimize [stochastic progressive photon mapping](https://cs.uwaterloo.ca/~thachisu/sppm.pdf), an offline rendering algorithm.
 - Achieve a fully vectorized (SIMD) implementation with 22.7x speedup compared to the baseline.
+
+<br><br>
 
 ## Bachelor Courses, Tsinghua University
 
@@ -122,6 +130,8 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 - Apply clustering and statistical methods to extract the topics and keywords of news.
 - Design a beautiful frontend for visualizing geological and timeline data of diversed types.
 
+<br>
+
 ### [Fundamentals of Computer Graphics](https://github.com/JamesZFS/Pharosa) (A)
 
 ![cg](/images/projects/cg-thu.png)
@@ -131,6 +141,8 @@ Here's a pdf version of my [CV](/files/cv.pdf)
   - [stochastic progressive photon mapping](https://cs.uwaterloo.ca/~thachisu/sppm.pdf) global illumination algorithm.
   - ray intersection with Bezier surfaces through Newton's method.
   - parse scene files from JSON.
+
+<br>
 
 ### [Fundamentals of Search Engine Technology](https://github.com/JamesZFS/ElasticJury) (A)
 
@@ -163,12 +175,16 @@ Here's a pdf version of my [CV](/files/cv.pdf)
 ### [Software Engineering](https://github.com/JamesZFS/AwesomeCoding) (A)
 - Develop a web-based live teaching platform for [Jisuanke Company](https://www.jisuanke.com/).
 
+<br>
+
 ### Foundation of Object-Oriented Programming (A)
 
 ![oop](/images/projects/oop.png)
 
 - Design and implement two physically-based 2D games based on Qt and [LiquidFun](https://google.github.io/liquidfun/) physics engine.
 - [Repo 1](https://github.com/JamesZFS/Warzone), [repo 2](https://github.com/JamesZFS/Plongeur)
+
+<br><br>
 
 -----
 
