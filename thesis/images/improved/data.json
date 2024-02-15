@@ -47,6 +47,39 @@
           ]
         },
         {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-empty/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-empty/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-empty/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-empty/guided_quality_varscan.exr",
+                "imageB": "images/improved/cbox-empty/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-empty/guided_quality_varscan.exr",
+                "imageB": "images/improved/cbox-empty/reference.exr"
+              }
+            }
+          ]
+        },
+        {
           "title": "VS (1)",
           "children": [
             {
@@ -210,6 +243,39 @@
               }
             }
           ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-empty/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-empty/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-empty/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-empty/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/cbox-empty/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-empty/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/cbox-empty/reference.exr"
+              }
+            }
+          ]
         }
       ]
     },
@@ -253,6 +319,39 @@
               "lossMap": {
                 "function": "L2",
                 "imageA": "images/improved/cbox-classic/guided_quality.exr",
+                "imageB": "images/improved/cbox-classic/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-classic/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-classic/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-classic/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-classic/guided_quality_varscan.exr",
+                "imageB": "images/improved/cbox-classic/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-classic/guided_quality_varscan.exr",
                 "imageB": "images/improved/cbox-classic/reference.exr"
               }
             }
@@ -422,6 +521,39 @@
               }
             }
           ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-classic/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-classic/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-classic/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-classic/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/cbox-classic/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-classic/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/cbox-classic/reference.exr"
+              }
+            }
+          ]
         }
       ]
     },
@@ -465,6 +597,39 @@
               "lossMap": {
                 "function": "L2",
                 "imageA": "images/improved/cbox-flipped-light/guided_quality.exr",
+                "imageB": "images/improved/cbox-flipped-light/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-flipped-light/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-flipped-light/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-flipped-light/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-flipped-light/guided_quality_varscan.exr",
+                "imageB": "images/improved/cbox-flipped-light/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-flipped-light/guided_quality_varscan.exr",
                 "imageB": "images/improved/cbox-flipped-light/reference.exr"
               }
             }
@@ -634,6 +799,39 @@
               }
             }
           ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/cbox-flipped-light/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/cbox-flipped-light/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/cbox-flipped-light/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/cbox-flipped-light/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/cbox-flipped-light/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/cbox-flipped-light/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/cbox-flipped-light/reference.exr"
+              }
+            }
+          ]
         }
       ]
     },
@@ -677,6 +875,39 @@
               "lossMap": {
                 "function": "L2",
                 "imageA": "images/improved/torus/guided_quality.exr",
+                "imageB": "images/improved/torus/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/torus/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/torus/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/torus/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/torus/guided_quality_varscan.exr",
+                "imageB": "images/improved/torus/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/torus/guided_quality_varscan.exr",
                 "imageB": "images/improved/torus/reference.exr"
               }
             }
@@ -846,6 +1077,39 @@
               }
             }
           ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/torus/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/torus/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/torus/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/torus/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/torus/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/torus/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/torus/reference.exr"
+              }
+            }
+          ]
         }
       ]
     },
@@ -889,6 +1153,39 @@
               "lossMap": {
                 "function": "L2",
                 "imageA": "images/improved/pbrt-book/guided_quality.exr",
+                "imageB": "images/improved/pbrt-book/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/pbrt-book/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/pbrt-book/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/pbrt-book/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/pbrt-book/guided_quality_varscan.exr",
+                "imageB": "images/improved/pbrt-book/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/pbrt-book/guided_quality_varscan.exr",
                 "imageB": "images/improved/pbrt-book/reference.exr"
               }
             }
@@ -1055,6 +1352,1768 @@
                 "function": "L2",
                 "imageA": "images/improved/pbrt-book/guided_quality_varscan_3.exr",
                 "imageB": "images/improved/pbrt-book/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/pbrt-book/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/pbrt-book/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/pbrt-book/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/pbrt-book/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/pbrt-book/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/pbrt-book/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/pbrt-book/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "projection-box",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/improved/projection-box/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality_varscan.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality_varscan.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality_varscan_welford.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id_varscan_welford.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay_varscan_welford.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality_varscan_1+.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id_varscan_1+.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay_varscan_1+.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_1+.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_1+.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim + 16 min samples)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality_varscan_1++.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id_varscan_1++.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay_varscan_1++.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (2)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality_varscan_2.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id_varscan_2.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay_varscan_2.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_2.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_2.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (3)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality_varscan_3.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id_varscan_3.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay_varscan_3.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_3.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_3.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/projection-box/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/projection-box/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/projection-box/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/projection-box/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/projection-box/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mts-box-complex",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/improved/mts-box-complex/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-complex/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-complex/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-complex/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-complex/guided_quality.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-complex/guided_quality.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-complex/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-complex/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-complex/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-complex/guided_quality_varscan_welford.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-complex/cache_id_varscan_welford.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-complex/overlay_varscan_welford.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-complex/guided_quality_varscan_1+.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-complex/cache_id_varscan_1+.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-complex/overlay_varscan_1+.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_1+.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_1+.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim + 16 min samples)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-complex/guided_quality_varscan_1++.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-complex/cache_id_varscan_1++.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-complex/overlay_varscan_1++.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (2)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-complex/guided_quality_varscan_2.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-complex/cache_id_varscan_2.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-complex/overlay_varscan_2.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_2.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_2.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (3)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-complex/guided_quality_varscan_3.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-complex/cache_id_varscan_3.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-complex/overlay_varscan_3.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_3.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_3.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-complex/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-complex/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-complex/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-complex/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/mts-box-complex/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mts-box-three-lights",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/improved/mts-box-three-lights/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-three-lights/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-three-lights/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-three-lights/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-three-lights/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-three-lights/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-three-lights/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-three-lights/guided_quality_varscan_welford.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-three-lights/cache_id_varscan_welford.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-three-lights/overlay_varscan_welford.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-three-lights/guided_quality_varscan_1+.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-three-lights/cache_id_varscan_1+.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-three-lights/overlay_varscan_1+.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_1+.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_1+.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim + 16 min samples)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-three-lights/guided_quality_varscan_1++.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-three-lights/cache_id_varscan_1++.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-three-lights/overlay_varscan_1++.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (2)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-three-lights/guided_quality_varscan_2.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-three-lights/cache_id_varscan_2.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-three-lights/overlay_varscan_2.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_2.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_2.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (3)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-three-lights/guided_quality_varscan_3.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-three-lights/cache_id_varscan_3.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-three-lights/overlay_varscan_3.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_3.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_3.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/mts-box-three-lights/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/mts-box-three-lights/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/mts-box-three-lights/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/mts-box-three-lights/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/mts-box-three-lights/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-balcony-plants",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/improved/sanmiguel-balcony-plants/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-balcony-plants/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-balcony-plants/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-balcony-plants/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-balcony-plants/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-balcony-plants/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_welford.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-balcony-plants/cache_id_varscan_welford.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-balcony-plants/overlay_varscan_welford.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim + 16 min samples)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_1++.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-balcony-plants/cache_id_varscan_1++.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-balcony-plants/overlay_varscan_1++.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-balcony-plants/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-balcony-plants/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-balcony-plants/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/sanmiguel-balcony-plants/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-in-tree",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/improved/sanmiguel-in-tree/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-in-tree/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-in-tree/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-in-tree/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-in-tree/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-in-tree/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-in-tree/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality_varscan.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality_varscan.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-in-tree/guided_quality_varscan_welford.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-in-tree/cache_id_varscan_welford.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-in-tree/overlay_varscan_welford.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim + 16 min samples)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-in-tree/guided_quality_varscan_1++.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-in-tree/cache_id_varscan_1++.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-in-tree/overlay_varscan_1++.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-in-tree/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-in-tree/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-in-tree/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-in-tree/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/sanmiguel-in-tree/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sanmiguel-entry",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/improved/sanmiguel-entry/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-entry/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-entry/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-entry/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-entry/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-entry/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-entry/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality_varscan.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality_varscan.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-entry/guided_quality_varscan_welford.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-entry/cache_id_varscan_welford.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-entry/overlay_varscan_welford.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim + 16 min samples)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-entry/guided_quality_varscan_1++.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-entry/cache_id_varscan_1++.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-entry/overlay_varscan_1++.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/sanmiguel-entry/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/sanmiguel-entry/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/sanmiguel-entry/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/sanmiguel-entry/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/sanmiguel-entry/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "bathroom2",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/improved/bathroom2/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/bathroom2/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/bathroom2/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/bathroom2/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/bathroom2/guided_quality.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/bathroom2/guided_quality.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/bathroom2/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/bathroom2/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/bathroom2/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/bathroom2/guided_quality_varscan.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/bathroom2/guided_quality_varscan.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/bathroom2/guided_quality_varscan_welford.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/bathroom2/cache_id_varscan_welford.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/bathroom2/overlay_varscan_welford.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/bathroom2/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/bathroom2/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim + 16 min samples)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/bathroom2/guided_quality_varscan_1++.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/bathroom2/cache_id_varscan_1++.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/bathroom2/overlay_varscan_1++.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/bathroom2/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/bathroom2/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/bathroom2/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/bathroom2/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/bathroom2/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/bathroom2/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/bathroom2/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/bathroom2/reference.exr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "villa-daylight",
+      "children": [
+        {
+          "title": "Reference",
+          "children": [
+            {
+              "title": "Image",
+              "image": "images/improved/villa-daylight/reference.exr"
+            }
+          ]
+        },
+        {
+          "title": "Baseline",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/villa-daylight/guided_quality.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/villa-daylight/cache_id.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/villa-daylight/overlay.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/villa-daylight/guided_quality.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/villa-daylight/guided_quality.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variance Scanning (1 - Welford)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/villa-daylight/guided_quality_varscan.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/villa-daylight/cache_id_varscan.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/villa-daylight/overlay_varscan.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/villa-daylight/guided_quality_varscan.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/villa-daylight/guided_quality_varscan.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/villa-daylight/guided_quality_varscan_welford.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/villa-daylight/cache_id_varscan_welford.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/villa-daylight/overlay_varscan_welford.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/villa-daylight/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/villa-daylight/guided_quality_varscan_welford.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1 + filter dim + 16 min samples)",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/villa-daylight/guided_quality_varscan_1++.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/villa-daylight/cache_id_varscan_1++.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/villa-daylight/overlay_varscan_1++.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/villa-daylight/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/villa-daylight/guided_quality_varscan_1++.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            }
+          ]
+        },
+        {
+          "title": "VS (1) 32 spp",
+          "children": [
+            {
+              "title": "Guided",
+              "image": "images/improved/villa-daylight/guided_quality_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Cache ID",
+              "image": "images/improved/villa-daylight/cache_id_varscan_1++_t32.exr"
+            },
+            {
+              "title": "Overlay",
+              "image": "images/improved/villa-daylight/overlay_varscan_1++_t32.exr"
+            },
+            {
+              "title": "SMAPE",
+              "lossMap": {
+                "function": "SMAPE",
+                "imageA": "images/improved/villa-daylight/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
+              }
+            },
+            {
+              "title": "MSE",
+              "lossMap": {
+                "function": "L2",
+                "imageA": "images/improved/villa-daylight/guided_quality_varscan_1++_t32.exr",
+                "imageB": "images/improved/villa-daylight/reference.exr"
               }
             }
           ]
