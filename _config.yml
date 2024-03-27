@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Fengshi Zheng"
 title_separator          : "-"
 name                     : &name "Fengshi Zheng"
-description              : &description "I'm a senior undergraduate student from the department of Computer Science and Technology, Tsinghua University."
+description              : &description "I'm a CS master student at ETH Zurich, majoring in computer graphics."
 url                      : https://JamesZFS.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "JamesZFS/JamesZFS.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Fengshi Zheng"
   avatar           : "profile.jpg"
-  bio              : "I'm a CS master student at ETH Zurich, majoring in computer graphics."
+  bio              : "No passion, no life."
   location         : "Zurich, Switzerland"
   employer         :
   pubmed           : 
