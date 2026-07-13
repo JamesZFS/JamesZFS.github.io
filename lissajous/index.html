@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HeyMyVoice Lissajous</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link type="image/png" sizes="32x32" rel="icon" href="favicon.png">
+  </head>
+  <body>
+    <div class="controls-shell">
+      <button class="controls-toggle" id="controls-toggle" type="button" aria-label="Hide visual options" aria-expanded="true">
+        <span class="controls-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <fieldset class="visual-controls" aria-label="Visual options">
+        <div class="toggle-row">
+          <label class="toggle">
+            <input id="banded-rainbow-toggle" type="checkbox">
+            <span class="toggle-switch" aria-hidden="true"></span>
+            <span class="toggle-text">Rainbow Color</span>
+          </label>
+          <label class="toggle">
+            <input id="use-stack-toggle" type="checkbox">
+            <span class="toggle-switch" aria-hidden="true"></span>
+            <span class="toggle-text">Note Stack</span>
+          </label>
+        </div>
+        <label class="slider">
+          <span class="slider-text">Amplitude</span>
+          <input id="amplitude-slider" type="range" min="-1" max="1" step="0.01">
+        </label>
+      </fieldset>
+    </div>
+    <canvas id="lissajous" width="512" height="512" aria-label="Lissajous WebGL view"></canvas>
+    <script src="https://unpkg.com/tone"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
